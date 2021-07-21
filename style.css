@@ -10,7 +10,8 @@ body{
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #contenedor{
-  position: relative;
+  position: relative; 
+  z-index: 1;
 }
 .div{
   display: block;
@@ -38,6 +39,7 @@ header{
 .logo{
   width: 60vw;
 }
+
 .logo  img {
     width: 100%;
     height: 100%;
@@ -112,6 +114,7 @@ div.icon img{
 .tabla{
     display: flex;
 }
+
 h1{
     display: block;
     font-size: 1.9em;
@@ -233,6 +236,7 @@ p {
     color: black;
 }
 @media (max-width:480px){
+
     header{
     background-color: rgb(175, 174, 174);
     display: flex;
@@ -248,8 +252,36 @@ p {
     position: relative;
     left: 20px;
     }
+
+    #correoE{
+        display: flex;
+        width: 150vw;
+        height: 37vh;
+        font-size: 0.5em;
+        width: 100vh;
+        }
+    #comofunciona{
+            flex-direction: column;
+            position: relative;
+            left: -15vw;
+        }
+    .pie-pagina{
+            width: 100vh;
+        }
+        .lista{
+            display: flex;
+            padding: 0em 2em;
+            justify-content: center;
+        }
+
+        #contenedor{
+            position: relative; 
+            z-index: 1;
+        }
+
 }
 @media (max-width:480px){
+
     .container{
     border-bottom: 1px black solid;
     display: flex;
@@ -258,7 +290,8 @@ p {
     flex-direction: column;
     position: relative;
     left: 45vw;
-}
+    }
+
     #caracteristicas p{
     display: flex;
     flex-wrap: nowrap;
@@ -271,6 +304,12 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+    }
+
+    #contenedor{
+        position: relative; 
+        z-index: 1;
     }
 }
 @media (max-width:480px){
@@ -289,7 +328,12 @@ p {
         font-size: 10px;
         justify-content: center;
     }
+
+    #contenedor{
+        position: relative; 
+    }
 }
+
 @media (max-width:480px){
     #correoE{
     display: flex;
@@ -297,7 +341,8 @@ p {
     height: 37vh;
     font-size: 0.5em;
     width: 100vh;
-    }
+    
+    } 
     #comofunciona{
         flex-direction: column;
         position: relative;
@@ -310,5 +355,8 @@ p {
         display: flex;
         padding: 0em 2em;
         justify-content: center;
+    }
+    #contenedor{
+        position: relative; 
     }
 }
